@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+.bg_intro {
+  width: 100%;
+  height: 100vh;
+
+  background-image: url('../../images/intro.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  // .btn_container {
+  //   margin-top: 3rem;
+
+  //   width: 100%;
+  //   display: flex;
+  //   justify-content: space-around;
+  // }
+}
+
+
+
