@@ -11,7 +11,9 @@ app.get('/', (req, res) => {
 app.use('/css', express.static(__dirname + '/web/css/'));
 
 // express image 적용
-app.use('/images', express.static(__dirname + '/images/'))
+app.use('/images', express.static(__dirname + '/images/'));
+
+
 
 
 // 연결되는 포트

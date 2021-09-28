@@ -2,4 +2,10 @@ node_modules
 
 server.txt
 
-python
+Python/test
+
+*.idea
+
+Font
+
+images
