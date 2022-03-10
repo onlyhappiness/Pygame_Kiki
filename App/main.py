@@ -31,7 +31,7 @@ def player(x, y):
 running = True
 while running:
   # RGB 색
-  # screen.fill((0,0,0))
+  screen.fill((0,0,0))
   
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
@@ -41,13 +41,19 @@ while running:
     if event.type == pygame.KEYDOWN:
       print('Key pressed')
       if event.key == pygame.K_LEFT:
-        print('Left arrow is pressed')
+        # print('Left arrow is pressed')
+        playerX_change  = -0.5
       if event.key == pygame.K_RIGHT:
-        print('Right arrow is pressed')
+        # print('Right arrow is pressed')
+        playerX_change  = 0.5
 
     if event.type == pygame.KEYUP:
       if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
-        print('Keystoke has been released')
+        # print('Keystoke has been released')
+        playerX_change  = 0
 
+
+  #
+  playerX += playerX_change
   player(playerX, playerY)
   pygame.display.update()
